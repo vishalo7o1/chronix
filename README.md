@@ -80,22 +80,6 @@ Server Options:
   --no-browser  Skip automatic browser launch
 ```
 
-## Deployment
-
-### Local Use
-
-```bash
-chronix --local
-```
-
-### Production (Docker)
-
-```bash
-docker-compose up -d
-```
-
-Deploy behind a TLS-terminating reverse proxy (Caddy, Nginx). Set `CHRONIX_BEHIND_PROXY=true` for secure cookie attributes. See `Caddyfile` and `nginx.conf.example` for configurations.
-
 ## Configuration
 
 Set via `~/.config/chronix/chronix.env` or `.env`:
