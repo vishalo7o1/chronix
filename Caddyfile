@@ -1,0 +1,54 @@
+# Chronix Caddy Configuration
+#
+# Replace chronix.example.com with your actual domain.
+# Caddy will automatically obtain and renew TLS certificates via Let's Encrypt.
+#
+# For local/internal deployments without a public domain, use:
+#   :443 {
+#       tls internal
+#       ...
+#   }
+
+chronix.example.com {
+    # Automatic TLS via Let's Encrypt
+    # No additional configuration needed for public domains
+
+    # Reverse proxy to Chronix
+    reverse_proxy chronix:8000 {
+        # Pass original client IP
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
+        header_up X-Real-IP {remote_host}
+        
+        # WebSocket support
+        header_up Connection {>Connection}
+        header_up Upgrade {>Upgrade}
+    }
+
+    # Security headers (Caddy adds many by default)
+    header {
+        # Prevent clickjacking
+        X-Frame-Options "DENY"
+        # Prevent MIME sniffing
+        X-Content-Type-Options "nosniff"
+        # XSS protection
+        X-XSS-Protection "1; mode=block"
+        # Referrer policy
+        Referrer-Policy "strict-origin-when-cross-origin"
+        # Remove server header
+        -Server
+    }
+
+    # Logging
+    log {
+        output file /var/log/caddy/chronix-access.log {
+            roll_size 100mb
+            roll_keep 5
+        }
+    }
+}
+
+# Redirect HTTP to HTTPS
+http://chronix.example.com {
+    redir https://{host}{uri} permanent
+}
