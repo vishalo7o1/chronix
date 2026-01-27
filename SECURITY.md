@@ -14,7 +14,7 @@ If you discover a security vulnerability in Chronix, please report it responsibl
 
 1. **Do not** open a public GitHub issue for security vulnerabilities
 2. Use [GitHub Security Advisories](https://github.com/icecubesandwich/chronix/security/advisories/new) to report privately
-3. Alternatively, email: `security@0xtb.sh`
+3. Alternatively, email: `0xtb.sh@proton.me`
 
 ### What to Include
 
