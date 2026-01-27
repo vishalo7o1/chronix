@@ -126,5 +126,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting changes.
 
 See [SECURITY.md](SECURITY.md) for vulnerability reporting.
 
----
-
