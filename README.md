@@ -29,7 +29,6 @@ Browser opens at `http://localhost:8000`. Credentials display once during initâ€
 - **CSV Export**: Export timeline for reporting workflows
 - **Markdown Export**: Export notes as standalone `.md` files or zip archive with attachments
 - **Image Paste**: Paste screenshots directly into notes (Ctrl+V)
-- **Keyboard Shortcuts**: `Ctrl+1/2` view switching, `n` new entry, `Ctrl+Enter` save
 
 ## Notes Features
 
@@ -54,24 +53,6 @@ Paste screenshots directly into the notes editor:
 - Downloads as `.zip` containing:
   - All notes as `.md` files
   - `attachments/` folder with images
-
-### Export Format
-
-Notes export with YAML frontmatter for metadata preservation:
-
-```yaml
----
-title: "Reconnaissance Notes"
-note_id: "abc12345"
-engagement_id: "def67890"
-created_at: "2024-01-15T10:30:00"
-updated_at: "2024-01-15T12:00:00"
----
-
-# Note content here...
-
-![screenshot](./attachments/abc12345_20240115_a1b2c3d4.png)
-```
 
 Exported files open cleanly in Obsidian, VS Code, or any markdown viewer.
 
